@@ -19,7 +19,7 @@ public class CatTest {
     public void catGetSound() {
         Cat cat = new Cat(feline);
         String actual = cat.getSound();
-        String expected = "Ìÿó";
+        String expected = "ĞœÑÑƒ";
 
         assertEquals(expected, actual);
     }
@@ -27,7 +27,7 @@ public class CatTest {
     @Test
     public void catGetFood() throws Exception {
         Cat cat = new Cat(feline);
-        List<String> expected = List.of("Æèâîòíûå", "Ïòèöû", "Ğûáà");
+        List<String> expected = List.of("Ğ–Ğ¸Ğ²Ğ¾Ñ‚Ğ½Ñ‹Ğµ", "ĞŸÑ‚Ğ¸Ñ†Ñ‹", "Ğ Ñ‹Ğ±Ğ°");
         Mockito.when(feline.eatMeat()).thenReturn(expected);
 
         assertEquals(expected, cat.getFood());

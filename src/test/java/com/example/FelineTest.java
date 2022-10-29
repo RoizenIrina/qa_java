@@ -13,14 +13,14 @@ public class FelineTest {
         Feline feline = new Feline();
         List<String> actual = feline.eatMeat();
 
-        assertEquals(List.of("Животные", "Птицы", "Рыба"), actual);
+        assertEquals(List.of("Р–РёРІРѕС‚РЅС‹Рµ", "РџС‚РёС†С‹", "Р С‹Р±Р°"), actual);
     }
 
     @Test
     public void felineGetFamily() {
         Feline feline = new Feline();
         String actual = feline.getFamily();
-        String expected = "Кошачьи";
+        String expected = "РљРѕС€Р°С‡СЊРё";
 
         assertEquals(expected, actual);
     }

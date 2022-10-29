@@ -9,14 +9,14 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 
 public class LionTest {
-    private String sexOption = "Самец";
+    private String sexOption = "РЎР°РјРµС†";
 
     @Test
     public void lionGetFood() throws Exception {
         Feline feline = Mockito.mock(Feline.class);
         Lion lion = new Lion(feline, sexOption);
-        List<String> expected = List.of("Животные", "Птицы", "Рыба");
-        Mockito.when(feline.getFood("Хищник")).thenReturn(expected);
+        List<String> expected = List.of("Р–РёРІРѕС‚РЅС‹Рµ", "РџС‚РёС†С‹", "Р С‹Р±Р°");
+        Mockito.when(feline.getFood("РҐРёС‰РЅРёРє")).thenReturn(expected);
         List<String> actual = lion.getFood();
 
         assertEquals(expected, actual);
@@ -25,7 +25,7 @@ public class LionTest {
     @Test
     public void lionSexException() {
         Feline feline = Mockito.mock(Feline.class);
-        String sexInvalidOption = "неизвестно";
+        String sexInvalidOption = "РЅРµРёР·РІРµСЃС‚РЅРѕ";
         Exception actualException = null;
         try {
             new Lion(feline, sexInvalidOption);
