@@ -28,8 +28,8 @@ public class LionTestParameterized {
     @Parameterized.Parameters
     public static Object[] getListOfMealDataForHerbivoreAndPredator() {
         return new Object[][] {
-                {"—‡ÏÂˆ", true},
-                {"—‡ÏÍ‡", false}
+                {"–°–∞–º–µ—Ü", true},
+                {"–°–∞–º–∫–∞", false}
         };
     }
 
